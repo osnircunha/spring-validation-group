@@ -1,10 +1,10 @@
-package com.ocs.blob.validate.constraints;
+package com.ocs.validation.validate.constraints;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.time.LocalDateTime;
 
-public class ValidDateConstraint implements ConstraintValidator<com.ocs.blob.validate.constraints.ValidDate, LocalDateTime> {
+public class ValidDateConstraint implements ConstraintValidator<com.ocs.validation.validate.constraints.ValidDate, LocalDateTime> {
 
     private int yearsPast;
     private int yearsFuture;

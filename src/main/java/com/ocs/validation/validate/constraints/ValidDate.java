@@ -1,4 +1,4 @@
-package com.ocs.blob.validate.constraints;
+package com.ocs.validation.validate.constraints;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

@@ -1,7 +1,7 @@
-package com.ocs.blob.model;
+package com.ocs.validation.model;
 
-import com.ocs.blob.validate.constraints.ValidDate;
-import com.ocs.blob.validate.filter.Create;
+import com.ocs.validation.validate.constraints.ValidDate;
+import com.ocs.validation.validate.filter.Create;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -21,7 +21,7 @@ public class PayloadMessage {
     private String amount;
 
     @Valid
-    private String participantId;
+    private String groupId;
 
     @ValidDate(groups = Create.class, allowedYearsFuture = 2, allowedYearsPast = 2)
     @DateTimeFormat(iso = DATE_TIME)
